@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHANKS WEATHER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h1>SHANK'S WEATHER</h1>
+        </div>
+        <div class="menu">
+            <p class="item i1 active">Your Weather</p>
+            <p class="item i2">Search Weather</p>
+        </div>
+
+        <div class="search-weather-container hidden">
+            <div class="container">
+                <input type="text" class="search-input" placeholder="enter city name">
+            <button class="search-icon"><img src="assets/search.png" alt="search"></button>
+            </div>
+        </div>
+
+        <div class="weather-container">
+            <div class="location-container">
+                <p class="location-title"></p>
+                <img src="" alt="" class="flag">
+            </div>
+            <p class="weather-text"></p>
+            <img src="" alt="" class="weather-img">
+            <p class="temp">0 C°</p>
+
+            <div class="weather-parameters-container">
+                <div class="card">
+                    <img src="assets/wind.png" alt="" class="windspeed-img">
+                    <p>WINDSPEED</p>
+                    <p class="windspeed-value"></p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/humidity.png" alt="" class="humidity-img">
+                    <p>HUMIDITY</p>
+                    <p class="humidity-value"></p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/cloud.png" alt="" class="cloud-img">
+                    <p>CLOUDS</p>
+                    <p class="cloud-value"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="app.js"></script>
+</html>
